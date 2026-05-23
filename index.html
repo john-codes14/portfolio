@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Ephraim C | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header class="site-header" id="top">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a href="#top" class="logo">JE<span>Portfolio</span></a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container fade-in" id="hero">
+  <div class="hero-container">
+    
+    <div class="hero-text">
+      <p class="eyebrow">Hello, I'm</p>
+
+      <h1>John Ephraim C</h1>
+
+      <h2>II BSc Computer Science Student</h2>
+
+      <p class="hero-intro">
+        BSc Computer Science student passionate about web development,
+      programming, and building practical digital solutions.
+      </p>
+
+      <a href="#projects" class="btn primary-btn">
+        View My Projects
+      </a>
+    </div>
+
+    <div class="hero-image">
+      <img src="assets/profile.png" alt="John Ephraim">
+    </div>
+
+  </div>
+</section>
+
+    <!-- About Section -->
+    <section class="section container fade-in" id="about">
+      <div class="section-header">
+        <p class="section-tag">About</p>
+        <h3>My Learning Journey</h3>
+      </div>
+      <p>
+        I am currently a III BSc Computer Science student who enjoys building small but meaningful programs to strengthen my fundamentals.
+        I started with Python scripting and basic problem-solving, then explored object-oriented programming in Java, and now regularly
+        practice DSA concepts in C++ to improve logical thinking.
+      </p>
+      <p>
+        As a beginner developer, I focus on writing clean code, understanding core concepts properly, and finishing projects that help me
+        grow step-by-step. My goal is to become a full-stack developer with strong software engineering fundamentals.
+      </p>
+    </section>
+
+   <!-- Skills Section -->
+<section class="section container fade-in" id="skills">
+  <div class="section-header">
+    <p class="section-tag">Skills</p>
+    <h3>Current Technical Skills</h3>
+  </div>
+
+  <div class="skills-grid">
+
+    <article class="skill-card">
+      <h4>Python</h4>
+      <p>
+        Scripting, automation, and problem-solving practice
+        with Python fundamentals.
+      </p>
+    </article>
+
+    <article class="skill-card">
+      <h4>Java</h4>
+      <p>
+        Object-oriented programming concepts, syntax fundamentals,
+        and beginner application development.
+      </p>
+    </article>
+
+    <article class="skill-card">
+      <h4>C++</h4>
+      <p>
+        Data structures, algorithms, and logical problem-solving
+        practice.
+      </p>
+    </article>
+
+    <article class="skill-card">
+      <h4>HTML & CSS</h4>
+      <p>
+        Responsive website layouts, styling, and modern UI design
+        fundamentals.
+      </p>
+    </article>
+
+    <article class="skill-card">
+      <h4>Git & GitHub</h4>
+      <p>
+        Version control, repository management, and collaborative
+        development basics.
+      </p>
+    </article>
+
+  </div>
+</section>
+
+   <!-- Projects Section -->
+<section class="section container fade-in" id="projects">
+  <div class="section-header">
+    <p class="section-tag">Projects</p>
+    <h3>Projects I've Built</h3>
+  </div>
+
+  <div class="project-grid">
+
+    <!-- Portfolio Website -->
+    <article class="project-card">
+      <h4>Personal Portfolio Website</h4>
+
+      <p>
+        A responsive personal portfolio website built using HTML,
+        CSS, and JavaScript to showcase my profile, technical skills,
+        and development journey with a clean modern UI.
+      </p>
+
+      <span class="badge">HTML / CSS / JavaScript</span>
+    </article>
+
+    <!-- Expense Tracker -->
+    <article class="project-card">
+      <h4>Simple Expense Tracker</h4>
+
+      <p>
+        A beginner-friendly Python application designed to record,
+        organize, and monitor daily expenses using basic programming
+        and file handling concepts.
+      </p>
+
+      <span class="badge">Python</span>
+    </article>
+
+    <!-- Student Record Manager -->
+    <article class="project-card">
+      <h4>Student Record Manager</h4>
+
+      <p>
+        A console-based project for storing and managing student
+        information while practicing CRUD operations and structured
+        data handling in Python.
+      </p>
+
+      <span class="badge">Python / File Handling</span>
+    </article>
+
+  </div>
+</section>
+
+    <!-- Contact Section -->
+    <section class="section container fade-in" id="contact">
+      <div class="section-header">
+        <p class="section-tag">Contact</p>
+        <h3>Let's Connect</h3>
+      </div>
+
+      <p class="contact-email">Email: <a href="mailto:johnephraimcr7@gmail.com">johnephraimcr7@gmail.com</a></p>
+
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="field-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+          <small class="error" id="nameError"></small>
+        </div>
+
+        <div class="field-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          <small class="error" id="emailError"></small>
+        </div>
+
+        <div class="field-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+          <small class="error" id="messageError"></small>
+        </div>
+
+        <button type="submit" class="btn primary-btn">Send Message</button>
+        <p id="formStatus" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+  <p>© 2026 John Ephraim C</p>
+
+  <div class="footer-links">
+    <a href="https://github.com/john-codes14" target="_blank">
+      GitHub
+    </a>
+
+    <a href="mailto:johnephraimcr7@gmail.com">
+      Email
+    </a>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+  emailjs.init("Qq1B7HFaMk5e-e_aE");
+</script>
+ <script src="script.js"></script>
+</body>
+</html>
