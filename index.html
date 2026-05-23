@@ -3,83 +3,126 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>John Ephraim C | Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <title>John Ephraim C | Full-Stack Developer Portfolio</title>
+
+  <meta name="description" content="John Ephraim C - Aspiring Full-Stack Developer Portfolio" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <!-- Header & Navigation -->
-  <header class="site-header" id="top">
-    <nav class="navbar container" aria-label="Primary navigation">
-      <a href="#top" class="logo">JE<span>Portfolio</span></a>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+<header class="site-header">
+  <nav class="navbar container">
 
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <a href="#" class="logo">
+      John<span>Dev</span>
+    </a>
 
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode">🌙</button>
-    </nav>
-  </header>
+    <button class="nav-toggle" id="navToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-  <main>
-    <section class="hero container fade-in" id="hero">
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button class="theme-toggle" id="themeToggle">
+      🌙
+    </button>
+
+  </nav>
+</header>
+
+<main>
+
+<section class="hero container fade-in" id="hero">
+
   <div class="hero-container">
-    
+
     <div class="hero-text">
-      <p class="eyebrow">Hello, I'm</p>
 
-      <h1>John Ephraim C</h1>
-
-      <h2>II BSc Computer Science Student</h2>
-
-      <p class="hero-intro">
-        BSc Computer Science student passionate about web development,
-      programming, and building practical digital solutions.
+      <p class="eyebrow">
+        ASPIRING FULL-STACK DEVELOPER
       </p>
 
-      <a href="#projects" class="btn primary-btn">
-        View My Projects
-      </a>
+      <h1>
+        John Ephraim C
+      </h1>
+
+      <h2>
+        Building modern web experiences and improving every day through real projects.
+      </h2>
+
+      <p class="hero-intro">
+        Computer Science student focused on frontend development,
+        programming fundamentals, and practical project building using
+        HTML, CSS, JavaScript, Python, and GitHub workflows.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#projects" class="btn primary-btn">
+          View Projects
+        </a>
+
+        <a href="https://github.com/john-codes14" target="_blank" class="btn secondary-btn">
+          GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/in/john-ephraim-368002341" target="_blank" class="btn secondary-btn">
+          LinkedIn
+        </a>
+
+      </div>
+
     </div>
 
     <div class="hero-image">
-      <img src="assets/profile.png" alt="John Ephraim">
+      <img src="assets/profile.png" alt="John Ephraim C">
     </div>
 
   </div>
+
 </section>
 
-    <!-- About Section -->
-    <section class="section container fade-in" id="about">
-      <div class="section-header">
-        <p class="section-tag">About</p>
-        <h3>My Learning Journey</h3>
-      </div>
-      <p>
-        I am currently a III BSc Computer Science student who enjoys building small but meaningful programs to strengthen my fundamentals.
-        I started with Python scripting and basic problem-solving, then explored object-oriented programming in Java, and now regularly
-        practice DSA concepts in C++ to improve logical thinking.
-      </p>
-      <p>
-        As a beginner developer, I focus on writing clean code, understanding core concepts properly, and finishing projects that help me
-        grow step-by-step. My goal is to become a full-stack developer with strong software engineering fundamentals.
-      </p>
-    </section>
+<section class="section container fade-in" id="about">
 
-   <!-- Skills Section -->
+  <div class="section-header">
+    <p class="section-tag">About</p>
+    <h3>Developer Journey</h3>
+  </div>
+
+  <div class="about-box">
+    <p>
+      I’m a Computer Science student passionate about building clean,
+      responsive, and practical web experiences. My current focus is
+      improving frontend development skills while strengthening my
+      programming fundamentals in Python, JavaScript, and C++.
+    </p>
+
+    <p>
+      I enjoy learning through real projects, improving UI design,
+      understanding developer workflows, and building a stronger
+      foundation for full-stack development.
+    </p>
+  </div>
+
+</section>
+
 <section class="section container fade-in" id="skills">
+
   <div class="section-header">
     <p class="section-tag">Skills</p>
     <h3>Current Technical Skills</h3>
@@ -88,50 +131,60 @@
   <div class="skills-grid">
 
     <article class="skill-card">
+      <h4>Frontend Development</h4>
+      <p>
+        Building responsive interfaces using HTML, CSS, and JavaScript with modern UI practices.
+      </p>
+    </article>
+
+    <article class="skill-card">
       <h4>Python</h4>
       <p>
-        Scripting, automation, and problem-solving practice
-        with Python fundamentals.
-      </p>
-    </article>
-
-    <article class="skill-card">
-      <h4>Java</h4>
-      <p>
-        Object-oriented programming concepts, syntax fundamentals,
-        and beginner application development.
-      </p>
-    </article>
-
-    <article class="skill-card">
-      <h4>C++</h4>
-      <p>
-        Data structures, algorithms, and logical problem-solving
-        practice.
-      </p>
-    </article>
-
-    <article class="skill-card">
-      <h4>HTML & CSS</h4>
-      <p>
-        Responsive website layouts, styling, and modern UI design
-        fundamentals.
+        Programming fundamentals, scripting, and beginner-level project development.
       </p>
     </article>
 
     <article class="skill-card">
       <h4>Git & GitHub</h4>
       <p>
-        Version control, repository management, and collaborative
-        development basics.
+        Repository management, version control, deployment, and workflow practice.
+      </p>
+    </article>
+
+    <article class="skill-card">
+      <h4>Problem Solving</h4>
+      <p>
+        Practicing logical thinking and programming concepts using C++ and Java fundamentals.
       </p>
     </article>
 
   </div>
+
 </section>
 
-   <!-- Projects Section -->
+<section class="section container fade-in">
+
+  <div class="section-header">
+    <p class="section-tag">Tech Stack</p>
+    <h3>Technologies I Work With</h3>
+  </div>
+
+  <div class="tech-stack">
+    <div class="tech-item">HTML5</div>
+    <div class="tech-item">CSS3</div>
+    <div class="tech-item">JavaScript</div>
+    <div class="tech-item">Python</div>
+    <div class="tech-item">Java</div>
+    <div class="tech-item">C++</div>
+    <div class="tech-item">Git</div>
+    <div class="tech-item">GitHub</div>
+    <div class="tech-item">Responsive Design</div>
+  </div>
+
+</section>
+
 <section class="section container fade-in" id="projects">
+
   <div class="section-header">
     <p class="section-tag">Projects</p>
     <h3>Projects I've Built</h3>
@@ -139,102 +192,187 @@
 
   <div class="project-grid">
 
-    <!-- Portfolio Website -->
     <article class="project-card">
+
+      <div class="project-top">
+        <span class="project-status">
+          Featured Project
+        </span>
+      </div>
+
       <h4>Personal Portfolio Website</h4>
 
       <p>
-        A responsive personal portfolio website built using HTML,
-        CSS, and JavaScript to showcase my profile, technical skills,
-        and development journey with a clean modern UI.
+        A modern responsive portfolio with dark/light theme support,
+        smooth animations, EmailJS integration, and GitHub Pages deployment.
       </p>
 
-      <span class="badge">HTML / CSS / JavaScript</span>
+      <div class="project-tech">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+      </div>
+
+      <div class="project-links">
+
+        <a href="https://john-codes14.github.io/portfolio"
+           target="_blank"
+           class="project-btn">
+           Live Demo
+        </a>
+
+        <a href="https://github.com/john-codes14/portfolio"
+           target="_blank"
+           class="project-btn">
+           GitHub
+        </a>
+
+      </div>
+
     </article>
 
-    <!-- Expense Tracker -->
     <article class="project-card">
-      <h4>Simple Expense Tracker</h4>
+
+      <div class="project-top">
+        <span class="project-status">
+          Learning Project
+        </span>
+      </div>
+
+      <h4>Expense Tracker</h4>
 
       <p>
-        A beginner-friendly Python application designed to record,
-        organize, and monitor daily expenses using basic programming
-        and file handling concepts.
+        Beginner-friendly Python application for tracking and organizing daily expenses using file handling concepts.
       </p>
 
-      <span class="badge">Python</span>
+      <div class="project-tech">
+        <span>Python</span>
+        <span>File Handling</span>
+      </div>
+
     </article>
 
-    <!-- Student Record Manager -->
     <article class="project-card">
+
+      <div class="project-top">
+        <span class="project-status">
+          Practice Project
+        </span>
+      </div>
+
       <h4>Student Record Manager</h4>
 
       <p>
-        A console-based project for storing and managing student
-        information while practicing CRUD operations and structured
-        data handling in Python.
+        Console-based project for managing student information while practicing CRUD operations and structured logic.
       </p>
 
-      <span class="badge">Python / File Handling</span>
+      <div class="project-tech">
+        <span>Python</span>
+        <span>Data Handling</span>
+      </div>
+
     </article>
 
   </div>
+
 </section>
 
-    <!-- Contact Section -->
-    <section class="section container fade-in" id="contact">
-      <div class="section-header">
-        <p class="section-tag">Contact</p>
-        <h3>Let's Connect</h3>
-      </div>
+<section class="section container fade-in">
 
-      <p class="contact-email">Email: <a href="mailto:johnephraimcr7@gmail.com">johnephraimcr7@gmail.com</a></p>
-
-      <form id="contact-form" class="contact-form" novalidate>
-        <div class="field-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your Name" required />
-          <small class="error" id="nameError"></small>
-        </div>
-
-        <div class="field-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="you@example.com" required />
-          <small class="error" id="emailError"></small>
-        </div>
-
-        <div class="field-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
-          <small class="error" id="messageError"></small>
-        </div>
-
-        <button type="submit" class="btn primary-btn">Send Message</button>
-        <p id="formStatus" class="form-status" aria-live="polite"></p>
-      </form>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-  <p>© 2026 John Ephraim C</p>
-
-  <div class="footer-links">
-    <a href="https://github.com/john-codes14" target="_blank">
-      GitHub
-    </a>
-
-    <a href="mailto:johnephraimcr7@gmail.com">
-      Email
-    </a>
+  <div class="section-header">
+    <p class="section-tag">GitHub</p>
+    <h3>Follow My Development Journey</h3>
   </div>
+
+  <div class="github-box">
+
+    <p>
+      I regularly improve my workflow, practice development concepts,
+      and publish projects through GitHub.
+    </p>
+
+    <a href="https://github.com/john-codes14"
+       target="_blank"
+       class="btn primary-btn">
+       Visit GitHub Profile
+    </a>
+
+  </div>
+
+</section>
+
+<section class="section container fade-in" id="contact">
+
+  <div class="section-header">
+    <p class="section-tag">Contact</p>
+    <h3>Let's Connect</h3>
+  </div>
+
+  <form id="contact-form" class="contact-form">
+
+    <div class="field-group">
+      <label>Name</label>
+      <input type="text" name="name" required placeholder="Your Name">
+    </div>
+
+    <div class="field-group">
+      <label>Email</label>
+      <input type="email" name="email" required placeholder="you@example.com">
+    </div>
+
+    <div class="field-group">
+      <label>Message</label>
+      <textarea name="message" rows="5" required placeholder="Your message..."></textarea>
+    </div>
+
+    <button type="submit" class="btn primary-btn">
+      Send Message
+    </button>
+
+    <p id="formStatus" class="form-status"></p>
+
+  </form>
+
+</section>
+
+</main>
+
+<footer class="site-footer">
+
+  <div class="container footer-content">
+
+    <div>
+      <h4>John Ephraim C</h4>
+      <p>Aspiring Full-Stack Developer</p>
+    </div>
+
+    <div class="footer-links">
+
+      <a href="https://github.com/john-codes14" target="_blank">
+        GitHub
+      </a>
+
+      <a href="https://www.linkedin.com/in/john-ephraim-368002341" target="_blank">
+        LinkedIn
+      </a>
+
+      <a href="mailto:johnephraimcr7@gmail.com">
+        Email
+      </a>
+
+    </div>
+
+  </div>
+
 </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <script>
-  emailjs.init("Qq1B7HFaMk5e-e_aE");
+emailjs.init("Qq1B7HFaMk5e-e_aE");
 </script>
- <script src="script.js"></script>
+
+<script src="script.js"></script>
+
 </body>
 </html>

@@ -1,91 +1,81 @@
-// Mobile navigation toggle
-const navToggle = document.getElementById("navToggle");
-const navLinks = document.getElementById("navLinks");
 
-if (navToggle && navLinks) {
-  navToggle.addEventListener("click", () => {
-    const isOpen = navLinks.classList.toggle("open");
-    navToggle.setAttribute("aria-expanded", String(isOpen));
-  });
+const navToggle=document.getElementById("navToggle");
+const navLinks=document.getElementById("navLinks");
 
-  navLinks.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      navLinks.classList.remove("open");
-      navToggle.setAttribute("aria-expanded", "false");
-    });
-  });
+navToggle.addEventListener("click",()=>{
+navLinks.classList.toggle("open");
+});
+
+const themeToggle=document.getElementById("themeToggle");
+
+const savedTheme=localStorage.getItem("theme");
+
+if(savedTheme==="light"){
+document.body.classList.add("light-theme");
+themeToggle.textContent="☀️";
 }
 
-// Dark / Light mode toggle
-const themeToggle = document.getElementById("themeToggle");
-const savedTheme = localStorage.getItem("theme");
+themeToggle.addEventListener("click",()=>{
+document.body.classList.toggle("light-theme");
 
-if (themeToggle) {
+const isLight=document.body.classList.contains("light-theme");
 
-  if (savedTheme === "light") {
-    document.body.classList.add("light-theme");
-    themeToggle.textContent = "☀️";
-  }
+themeToggle.textContent=isLight?"☀️":"🌙";
 
-  themeToggle.addEventListener("click", () => {
-    document.body.classList.toggle("light-theme");
+localStorage.setItem("theme",isLight?"light":"dark");
+});
 
-    const isLight =
-      document.body.classList.contains("light-theme");
+emailjs.init("Qq1B7HFaMk5e-e_aE");
 
-    themeToggle.textContent = isLight ? "☀️" : "🌙";
+const contactForm=document.getElementById("contact-form");
+const formStatus=document.getElementById("formStatus");
 
-    localStorage.setItem(
-      "theme",
-      isLight ? "light" : "dark"
-    );
-  });
+contactForm.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+formStatus.textContent="Sending...";
+
+emailjs.sendForm(
+"service_o14xr27",
+"template_cua7q7c",
+this
+)
+
+.then(()=>{
+
+formStatus.textContent="Message sent successfully!";
+contactForm.reset();
+
+})
+
+.catch(()=>{
+
+formStatus.textContent="Failed to send message.";
+
+});
+
+});
+
+const revealElements=document.querySelectorAll(
+".fade-in,.skill-card,.project-card"
+);
+
+const revealOnScroll=()=>{
+
+const triggerBottom=window.innerHeight*0.88;
+
+revealElements.forEach((element)=>{
+
+const rect=element.getBoundingClientRect();
+
+if(rect.top<triggerBottom){
+element.classList.add("show");
 }
 
-// Contact Form + EmailJS
-const contactForm = document.getElementById("contact-form");
-const formStatus = document.getElementById("formStatus");
+});
 
-if (contactForm) {
+};
 
-  contactForm.addEventListener("submit", function (e) {
-
-    e.preventDefault();
-
-    formStatus.textContent = "Sending message...";
-    formStatus.style.color = "#4ade80";
-
-    emailjs.sendForm(
-      "service_o14xr27",
-      "template_cua7q7c",
-      this
-    )
-    .then(() => {
-
-      formStatus.textContent =
-        "Message sent successfully!";
-
-      formStatus.style.color = "#4ade80";
-
-      contactForm.reset();
-
-    })
-    .catch((error) => {
-
-      formStatus.textContent =
-        "Failed to send message.";
-
-      formStatus.style.color = "#ff6b6b";
-
-      console.error(error);
-    });
-  });
-}
-
-// Footer year
-const yearElement = document.getElementById("year");
-
-if (yearElement) {
-  yearElement.textContent =
-    new Date().getFullYear();
-}
+window.addEventListener("scroll",revealOnScroll);
+window.addEventListener("load",revealOnScroll);
